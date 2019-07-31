@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:700|Open+Sans:300&display=swap" rel="stylesheet">
     <style>
         a {
-            color: mediumturquoise;
             text-decoration: none;
+            color: black;
         }
         a:hover {
-            color: cadetblue;
+            color: blueviolet;
         }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
         .console {
-            font-family: monaco;
+            font-family: 'Anonymous Pro', monospace;
+        }
+        .title {
+            height: 30px;
+            font-size: 2em;
+            padding-top: 0.5em;
+            padding-left: 1em;
+            position: relative;
         }
         .username {
             color: rgb(5, 184, 5);
@@ -22,49 +38,40 @@
         }
         .cursor {
             width: 20px;
-            height: 40px;
+            height: 35px;
             margin: 0;
             position: absolute;
             top: 50%;
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
-        .title {
-            height: 40px;
-            position: relative;
+
+       .menu {
+            padding: 15%;
+            font-size: 3em;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: lighter;
+            line-height: 1.25em;
+            text-align: center;
         }
-        .list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+
     </style>
-<title>Mari Husain</title>
+    <title>Mari Husain</title>
 </head>
+
 <body>
+    <div class="console title">
+            <span class="username">mari@localhost</span>:<span class="filepath">/Users/mari/dev/website</span>$ 
+            <img src="http://www.astrocityamusements.co.uk/communities/7/004/013/367/957//images/4632120752.gif" class="cursor">
+    </div>
 
-<div class="console">
-    <h1>
-        <span class="username">mari@localhost</span>:<span class="filepath">/Users/mari/website</span>$ cat introduction.txt
-    </h1>
-    <h1>
-        Hi! My name is Mari. I'm an intern, and I have no idea what I'm doing.
-    </h1>
-    <h1>
-        <span class="username">mari@localhost</span>:<span class="filepath">/Users/mari/website</span>$ ls -1 pages
-    </h1>
-    <h1>
-        <ul class="list">
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="resume.html">resume</a></li>
-        </ul>
-    </h1>
-    <h1 class="title">
-        <span class="username">mari@localhost</span>:<span class="filepath">/Users/mari/website</span>$ 
-        <img src="http://www.astrocityamusements.co.uk/communities/7/004/013/367/957//images/4632120752.gif" class="cursor">
-    </h1>
-</div>
-
+    <div class="menu">
+            <ul class="list">
+                <li><a href="contact.html">about me</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="resume.html">resume</a></li>
+            </ul>
+    </div>
 </body>
+
 </html>
